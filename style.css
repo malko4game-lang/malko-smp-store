@@ -1,0 +1,168 @@
+/* إعدادات الخلفية العامة للموقع والخطوط */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b0a0f;
+    color: #ffffff;
+}
+
+/* تصميم الهيدر العلوي */
+header {
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #181528 0%, #0b0a0f 100%);
+    border-bottom: 4px solid #8b5cf6;
+}
+
+.logo-text {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #8b5cf6;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 20px rgba(139, 92, 246, 0.6);
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #f3f4f6;
+}
+
+.server-ip {
+    margin-top: 20px;
+    background: #1e1b33;
+    padding: 12px 25px;
+    display: inline-block;
+    border-radius: 8px;
+    border: 1px solid #4c1d95;
+    font-weight: bold;
+}
+
+.server-ip span {
+    color: #a78bfa;
+}
+
+/* الحاوية وتوزيع كروت الرتب */
+.store-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* تصميم الكروت الافتراضية */
+.card {
+    background: #13111c;
+    border: 1px solid #231f38;
+    border-radius: 16px;
+    width: 310px;
+    padding: 35px 25px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* تمييز الكرت الخاص برتبة السيرفر الكبرى (MALKO) */
+.card.premium {
+    border: 2px solid #fbbf24;
+    background: #1a1614;
+    box-shadow: 0px 0px 25px rgba(251, 191, 36, 0.15);
+}
+
+.card.premium .price, .card.premium h2 {
+    color: #fbbf24;
+}
+
+.card.premium .buy-btn {
+    background: #fbbf24;
+    color: #1a1614;
+}
+
+.card.premium .buy-btn:hover {
+    background: #d97706;
+}
+
+/* تصميم شارات العروض فوق الكروت */
+.badge-best {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #8b5cf6;
+    color: #ffffff;
+    padding: 6px 18px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(139, 92, 246, 0.4);
+}
+
+.card.premium .badge-best {
+    background: #fbbf24;
+    color: #000000;
+    box-shadow: 0 4px 10px rgba(251, 191, 36, 0.4);
+}
+
+/* الأسعار والمميزات */
+.price {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #a78bfa;
+    margin: 25px 0;
+}
+
+.price span {
+    font-size: 1rem;
+    color: #6b7280;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+    margin-bottom: 35px;
+    min-height: 160px;
+}
+
+.features li {
+    margin: 14px 0;
+    color: #d1d5db;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* تصميم أزرار الانتقال للديسكورد */
+.buy-btn {
+    display: block;
+    background: #8b5cf6;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.buy-btn:hover {
+    background: #7c3aed;
+    transform: scale(1.02);
+}
+
+/* تذييل الصفحة */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #4b5563;
+    font-size: 0.9rem;
+    border-top: 1px solid #13111c;
+}
